@@ -7,6 +7,8 @@ const path = express.Router();
 //End Point with verify Logic
 path.post('/verify', function (req, res) {
 
+  //prueba
+
   if (req.headers.authorization) {
     let token = req.headers.authorization.split(" ")[1];
     if (token) {
